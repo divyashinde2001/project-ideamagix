@@ -1,0 +1,63 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="new1.css">
+    </head>
+    <body>
+        <div class="w3-bar w3-black">
+            <button class="w3-bar-item w3-button" onclick="openCity('London')">London</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('Paris')">Paris</button>
+            <button class="w3-bar-item w3-button" onclick="openCity('Tokyo')">Tokyo</button>
+          </div>
+    <div id="London" class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+      </div>
+      
+      <div id="Paris" class="city" >
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+      </div>
+      
+      <div id="Tokyo" class="city" style="display:none">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+      </div>
+
+      <div class="footer">
+        <div class="wrap">
+      
+         
+          
+          <div class="center">
+            <div class="center-wrap">
+              <nav>
+                <ul>
+                  <li>item 1</li>
+                  <li>item 2</li>
+                  <li>item 3</li>
+                  <li>item 4</li>
+                </ul>
+              </nav>
+              <p>&copy; 2015 copyright COMPANY NAME // All Rights Reserved</p>
+            </div>
+          </div>
+      
+          <div class="right">
+            <a href="">top</a>
+          </div>
+      
+        </div>
+      </div>
+      <script>
+        function openCity(cityName) {
+            var i;
+            var x = document.getElementsByClassName("city");
+            for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+  }
+  document.getElementById(cityName).style.display = "block";
+
+}
+      </script>
+    </body>
+</html>
